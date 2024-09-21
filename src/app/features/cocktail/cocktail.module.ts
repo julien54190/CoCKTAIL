@@ -9,6 +9,7 @@ import { CocktailFormComponent } from './cocktail-container/cocktail-form/cockta
 import { CocktailListComponent } from './cocktail-container/cocktail-list/coktail-list.component';
 import { COCKTAIL_ROUTES } from './cocktail.routes';
 import { SharedModule } from '../../shared/modules/shared.module';
+import { SnackbarComponent } from '../../shared/components/snackbar/snackbar.component';
 
 
 
@@ -25,7 +26,8 @@ import { SharedModule } from '../../shared/modules/shared.module';
     SharedModule,
     ReactiveFormsModule,
     FormsModule,
-    RouterModule.forChild(COCKTAIL_ROUTES)
+    RouterModule.forChild(COCKTAIL_ROUTES),
+    SnackbarComponent
 ]
 })
 export class CocktailModule { }
